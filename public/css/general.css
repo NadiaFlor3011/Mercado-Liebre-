@@ -11,3 +11,25 @@
     --SizeDiscounts: 16px;
     --SizeDescriptions: 16px;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--SizeBodyText);
+    font-size: var(--SizeBodyText);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
