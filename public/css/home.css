@@ -1,102 +1,109 @@
-        header {
-            background-color: var(--colorAmarillo);
-        }
-        
-        .home__header__logo img {
-            width: 150px;
-            height: 80px;
-            margin-left: 20px;
-        }
-        
-        .home__header__search-bar {
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: 20px;
-        }
-        
-        .home__header__search-bar input {
-            margin-right: 134px;
-        }
-        
-        .home__header__text {
-            display: flex;
-            margin-top: 10px;
-            flex-direction: row-reverse;
-            justify-content: center;
-        }
-        
-        .home__header__browser-menu__items {
-            display: flex;
-        }
-        
-        .home__header__browser-menu__items li {
-            margin-right: 5px;
-        }
-        
-        .home__header__browser-menu__link {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .burger-menu {
-            display: flex;
-            justify-content: center;
-            font-size: 20px;
-            margin-top: 20px;
-        }
-        
-        .burger-menu i {
-            background-color: var(--colorCeleste);
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        
-        .home__section__products__headline {
-            font-size: var(--SizeHeadline);
-            padding: 20px;
-        }
-        
-        .home__section__product__price {
-            font-size: var(--SizePrice);
-        }
-        
-        .home__section__product__discounts {
-            font-size: var(--SizeDiscount);
-        }
-        
-        .home__section__product__Descriptions {
-            font-size: var(--SizeDescriptions);
-        }
-        
-        .home__section__products {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .home__footer__section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 30px 60px;
-        }
-        
-        .home__footer__section__article {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-        
-        .home__footer__section__article i {
-            color: var(--colorCeleste);
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        
-        .home__footer__section__Copyright {
-            margin: 20px;
-        }
+/* header */
+
+header {
+    background-color: var(--colorAmarillo);
+}
+
+.home__header__logo img {
+    width: 150px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.home__header__search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.home__header__search-bar input {
+    margin-right: 134px;
+}
+
+.home__header__text {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.home__header__browser-menu__items {
+    display: flex;
+}
+
+.home__header__browser-menu__items li {
+    margin-right: 5px;
+}
+
+.home__header__browser-menu__link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home__header__burger-menu {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.home__header__burger-menu i {
+    background-color: var(--colorCeleste);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* section products */
+
+.home__section__products__headline {
+    padding: 20px;
+}
+
+.home__section__product__price {
+    font-size: var(--SizePrice);
+}
+
+.home__section__product__discounts {
+    font-size: var(--SizeDiscounts);
+}
+
+.home__section__product__Descriptions {
+    font-size: var(--SizeDescriptions);
+}
+
+.home__section__products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* footer */
+
+.home__footer__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 60px;
+}
+
+.home__footer__section__article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.home__footer__section__article i {
+    color: var(--colorCeleste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.home__footer__section__Copyright {
+    margin: 20px;
+}
