@@ -33,3 +33,7 @@ li {
 ul {
     padding: 0;
 }
+
+h2 {
+    font-size: var(--SizeHeadline);
+}
