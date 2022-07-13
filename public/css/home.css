@@ -39,7 +39,7 @@
                margin-top: 20px;
            }
            .home__header__burger-menu i {
-               background-color: var(--colorCeleste);
+               background-color: var(--colorLightBlue);
                color: #fff;
                padding: 10px;
                border-radius: 5px;
@@ -60,7 +60,7 @@
                margin-right: auto;
                display: flex;
                justify-content: center;
-               background-color: var(--colorGrisClaro);
+               background-color: var(--colorLightGray);
            }
            .home__section__product__photo-primary {
                width: 100%;
@@ -74,11 +74,11 @@
            }
            .home__section__products article {
                background-color: white;
-               border-top: 1px solid var(--colorGrisClaro);
+               border-top: 1px solid var(--colorLightGray);
                padding: 15px;
            }
            .home__section__product--icon i {
-               color: var(--colorVerde);
+               color: var(--colorGreen);
                border: 1px solid rgb(83, 168, 132);
                border-radius: 50%;
                padding: 5px 15px 15px 5px;
@@ -114,7 +114,7 @@
                margin-bottom: 30px;
            }
            .home__footer__section__article i {
-               color: var(--colorCeleste);
+               color: var(--colorLightBlue);
                font-size: 2em;
                margin-bottom: 10px;
            }
@@ -171,7 +171,7 @@
                margin-right: auto;
                display: flex;
                justify-content: center;
-               background-color: var(--colorGrisClaro);
+               background-color: var(--colorLightGray);
            }
            .home__section__product__photo-primary {
                width: 100%;
@@ -186,11 +186,11 @@
            .home__section__products article {
                background-color: white;
                box-shadow: 0px 0px 10px rgb(100, 100, 100);
-               border-top: 1px solid var(--colorGrisClaro);
+               border-top: 1px solid var(--colorLightGray);
                padding: 15px;
            }
            .home__section__product--icon i {
-               color: var(--colorVerde);
+               color: var(--colorGreen);
                border: 1px solid rgb(83, 168, 132);
                border-radius: 50%;
                padding: 5px 15px 15px 5px;
@@ -209,7 +209,7 @@
                font-weight: 400;
            }
            .home__section__product__Descriptions {
-               color: var(--colorGrisOscuro);
+               color: var(--colorDarkGray);
                font-size: var(--SizeDescriptions);
                font-weight: 400;
                padding-top: 20px;
@@ -229,7 +229,7 @@
                margin-bottom: 30px;
            }
            .home__footer__section__article i {
-               color: var(--colorCeleste);
+               color: var(--colorLightBlue);
                font-size: 2em;
                margin-bottom: 10px;
            }

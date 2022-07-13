@@ -1,10 +1,10 @@
 :root {
-    --colorAmarillo: #EAC926;
-    --colorAzul: #03264C;
-    --colorCeleste: #1259c3;
-    --colorGrisOscuro: #666;
-    --colorGrisClaro: #ebebeb;
-    --colorVerde: #39b54a;
+    --colorYellow: #EAC926;
+    --colorBlue: #03264C;
+    --colorLightBlue: #1259c3;
+    --colorDarkGray: #666;
+    --colorLightGray: #ebebeb;
+    --colorGreen: #39b54a;
     --SizeBodyText: 12px;
     --SizeHeadline: 24px;
     --SizePrice: 18px;
@@ -18,13 +18,13 @@
 }
 
 body {
-    background-color: var(--colorGrisClaro);
+    background-color: var(--colorLightGray);
     font-family: var(--SizeBodyText);
     font-size: var(--SizeBodyText);
 }
 
 header {
-    background-color: var(--colorAmarillo);
+    background-color: var(--colorYellow);
 }
 
 a {
@@ -42,5 +42,5 @@ ul {
 
 h2 {
     font-size: var(--SizeHeadline);
-    color: var(--colorGrisOscuro);
+    color: var(--colorDarkGray);
 }
