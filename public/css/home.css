@@ -145,7 +145,7 @@
                justify-content: center;
            }
            .home__header__browser-menu {
-               margin: 20px auto 20px
+               margin: 20px 10px 20px
            }
            .home__header__browser-menu__items {
                display: flex;
