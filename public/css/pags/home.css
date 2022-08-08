@@ -11,9 +11,9 @@
     }
     .home__header__search-bar {
         width: 50%;
-        padding-top: 20px;
         position: relative;
-        float: right;
+        display: flex;
+        align-items: center;
     }
     .home__header__search-bar :nth-child(1) {
         width: 80%;
@@ -22,8 +22,6 @@
     .home__header__search-bar :nth-child(2) {
         width: 12%;
         background-color: #fff;
-        position: absolute;
-        bottom: 2px;
         border: 1px solid black;
     }
     .home__header__text {
@@ -55,9 +53,6 @@
         font-size: 27px;
         padding: 5px;
         color: white;
-    }
-    .nav__input {
-        display: none;
     }
     .home__header__browser-menu__items {
         position: absolute;
@@ -95,7 +90,10 @@
     }
     .home__header__banner---image img {
         width: 100%;
-        height: 100%;
+        height: 90px;
+    }
+    .nav__input {
+        display: none;
     }
     /* section products */
     .home__main {
@@ -234,18 +232,21 @@
         display: flex;
         gap: 20px;
     }
-    .home__header__browser-menu__items {
+    .home__header__browser-menu__items ul {
         display: flex;
     }
     .home__header__browser-menu__items li {
         margin-left: 20px;
     }
-    .home__header__burger-menu {
+    .nav__input {
+        display: none;
+    }
+    .nav_label {
         display: none;
     }
     .home__header__banner---image {
         width: auto;
-        height: 130px;
+        height: 162px;
     }
     .home__header__banner---image img {
         width: 100%;
@@ -399,15 +400,21 @@
     .home__header__browser-menu__items {
         display: flex;
     }
+    .home__header__browser-menu__items ul {
+        display: flex;
+    }
     .home__header__browser-menu__items li {
         margin-left: 20px;
     }
-    .home__header__burger-menu {
+    .nav__input {
+        display: none;
+    }
+    .nav_label {
         display: none;
     }
     .home__header__banner---image {
         width: auto;
-        height: 130px;
+        height: 217px;
     }
     .home__header__banner---image img {
         width: 100%;
