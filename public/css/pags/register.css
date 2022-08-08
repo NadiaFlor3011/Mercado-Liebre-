@@ -1,0 +1,129 @@
+@media (min-width:320px) and (max-width:767px) {
+    .form__register {
+        background-color: #fff;
+        margin: auto;
+        width: 90%;
+        margin-top: 30px;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
+        text-align: center;
+    }
+    .form__register-paragraph {
+        font-weight: 300;
+    }
+    .form__register-container {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 55px;
+    }
+    .form__register-group {
+        position: relative;
+        color: #000;
+    }
+    .form__register-input {
+        font-size: 20px;
+        padding: 3px -3px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #5757577e;
+    }
+    .form__register-label {
+        color: #000000;
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        transform: translateY(5px);
+        transition: transform .5s, color .3s;
+    }
+    .form__register-input:focus+.form__register-label,
+    .form__register-input:not(:placeholder-shown)+.form__register-label {
+        transform: translateY(-10px) scale(.7);
+        transform-origin: left top;
+        color: #5757577e;
+    }
+    /* DATE */
+    .form__register-date {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form__register-date h3 {
+        padding: 5px;
+        width: 55%;
+    }
+    .register-date {
+        border: none;
+        padding-left: 6px;
+        width: 100%;
+    }
+    /* USER */
+    .form__register-user {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form__register-user h3 {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .user-label {
+        margin: 10px;
+    }
+    .user-input {
+        margin-left: 40px;
+    }
+    /* INTERESTS */
+    .form__interests {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        width: 100%;
+    }
+    .form__interests h3 {
+        width: 100%;
+    }
+    .form__register-photo {
+        border: 1px solid color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        height: 100px;
+        gap: 15px;
+        background-color: var( --colorLightGray);
+    }
+    .form__register-photo h3 {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .form__register-photo input {
+        display: none;
+    }
+    .form__register-photo i {
+        font-size: 40px;
+        color: rgba(92, 88, 88, 0.864);
+    }
+    .form__register-photo label {
+        background-color: var( --colorLightBlue);
+        height: 18px;
+        width: 82px;
+        border-radius: 10%;
+        margin-top: 13px;
+    }
+    /* BUTTON */
+    .form__register-button {
+        display: flex;
+        gap: 50px;
+    }
+    .form__button-register {
+        background-color: var( --colorLightBlue);
+        border: none;
+        padding: 5px;
+        border-radius: 10%;
+        width: 60px;
+    }
+}

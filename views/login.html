@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/ae7c764a16.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Register</title>
@@ -12,12 +13,13 @@
 
 <body>
 
+    <!-- logo -->
     <header class="home__header">
 
         <div class="home__header__logo">
 
             <div class="home__header__img">
-                <img src="images/logo-mercado-liebre.svg" />
+                <a href="/"><img src="images/logo-mercado-liebre.svg" /></a>
             </div>
 
 
@@ -55,50 +57,55 @@
                 <li><a href="Vender">Vender</a></li>
                 <li><a href="Ayuda">Ayuda</a></li>
             </ul>
-            <ul>
+
+            <!-- burguer-menu -->
+            <label for="menu" class="nav_label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu" class="nav__input">
+
+            <div class="home__header__browser-menu__items">
+                <ul>
+
+                    <li><a href="/register">Crea tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
 
 
-                <div class="home__header__browser-menu__items">
-                    <li><a href="Crea tu cuenta">Crea tu cuenta</a></li>
-                    <i class="fa-solid fa-id-card"></i>
+
+
+
+                    <li><a href="/login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
 
 
 
 
-                    <li><a href="Ingresá">Ingresá</a></li>
-                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    <li><a href="Mis compras ">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+
+                </ul>
+            </div>
 
 
-
-
-                    <li><a href="Mis compras ">Mis compras</a></li>
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </div>
-
-            </ul>
         </nav>
 
-        <!-- burguer-menu -->
-        <div class="home__header__burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+
         <div class="home__header__banner---image">
             <img src="images/img-home-banner.jpg" alt="">
         </div>
     </header>
+
     <main class="register__main">
 
-        <form class="form">
+        <form action="/" class="form">
             <h2 class="form__title">Inicia Sesión</h2>
             <p class="form__paragraph">¿Aún no tienes cuenta? <a href="/register" class="form__link">Ingresa aquí</a></p>
             <div class="form__container">
                 <div class="form__group">
-                    <input type="text" id="user" class="form__input" placeholder=" ">
+                    <input type="text" id="user" class="form__input" placeholder=" " autocomplete="off" required>
                     <label for="user" class="form__label">Usuario:</label>
                     <span class="form__line"></span>
                 </div>
                 <div class="form__group">
-                    <input type="text" id="password" class="form__input" placeholder=" ">
+                    <input type="text" id="password" class="form__input" placeholder=" " autocomplete="off" required>
                     <label for="password" class="form__label">Contraseña:</label>
                     <span class="form__line"></span>
                 </div>

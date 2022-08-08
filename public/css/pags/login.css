@@ -39,7 +39,8 @@
     border-bottom: 1px solid #5757577e;
 }
 
-.form__input:focus+.form__label {
+.form__input:focus+.form__label,
+.form__input:not(:placeholder-shown)+.form__label {
     transform: translateY(-10px) scale(.7);
     transform-origin: left top;
     color: #000;
@@ -53,4 +54,11 @@
     left: 0;
     transform: translateY(5px);
     transition: transform .5s, color .3s;
+}
+
+.form__submit {
+    background-color: var( --colorLightBlue);
+    border: none;
+    padding: 5px;
+    border-radius: 10%;
 }
