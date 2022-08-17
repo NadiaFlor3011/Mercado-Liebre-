@@ -1,0 +1,115 @@
+<%- include('./partials/head',{
+    title :' Register'
+}) %>
+
+    <body>
+
+        <%- include('./partials/header') %>
+
+            <main class="register__main">
+
+                <form action="/" class="form__register">
+                    <h2 class="form__register-title">Registrate</h2>
+
+                    <p class="form__register-paragraph">¿Ya tenés cuenta? <a href="/users/login" class="form__link">Ingresa aquí</a></p>
+                    <div class="form__register-container">
+
+                        <div class="form__register-group">
+                            <input type="text" id="name" class="form__register-input" placeholder=" " autocomplete="off" required minlength="3">
+                            <label for="name" class="form__register-label">Nombre y apellido:</label>
+
+                        </div>
+                        <div class="form__register-group">
+                            <input type="text" id="user" class="form__register-input" placeholder=" " autocomplete="off">
+                            <label for="user" class="form__register-label">Usuario:</label>
+
+                        </div>
+                        <div class="form__register-date">
+                            <h3>Fecha de nacimiento:</h3>
+                            <input type="date" id="date" class="register-date">
+
+                        </div>
+                        <div class="form__register-group">
+                            <input type="text" id="address" class="form__register-input" placeholder=" " autocomplete="off" required minlength="3">
+
+                            <label for="address" class="form__register-label">Dirección:</label>
+
+                        </div>
+                        <div class="form__register-user">
+                            <h3>Perfil del usuario</h3>
+
+                            <input type="radio" name="user_type" class="user-input" value="Comprador">
+                            <label for="user_type" class="user-label">Comprador</label>
+                            <input type="radio" name="user_type" class="user-input" value="Vendedor">
+                            <label for="user_type" class="user-label">Vendedor</label>
+                        </div>
+                        <div class="form__interests">
+                            <h3>Intereses</h3>
+
+                            <div class="form__interests-group">
+                                <input type="checkbox" id="interests">
+                                <label for="interest">Electro</label>
+                            </div>
+                            <div class="form__interests-group">
+                                <input type="checkbox" id="interests">
+                                <label for="interest">Moda</label>
+                            </div>
+                            <div class="form__interests-group">
+                                <input type="checkbox" id="interests">
+                                <label for="interest">Hogar</label>
+                            </div>
+                            <div class="form__interests-group">
+                                <input type="checkbox" id="interests">
+                                <label for="interest">Juguetería</label>
+                            </div>
+                            <div class="form__interests-group">
+                                <input type="checkbox" id="interests">
+                                <label for="interest">Vida sana</label>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="form__register-photo">
+                            <h3>Foto de perfil:</h3>
+                            <input type="file" name="avatar" id="avatar" accept="jpg">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <label for="avatar">Cargar archivo</label>
+
+
+                        </div>
+                        <div class="form__register-group">
+                            <input type="password" id="password" class="form__register-input" placeholder=" ">
+                            <label for="password" class="form__register-label">Contraseña:</label>
+
+                        </div>
+                        <div class="form__register-group">
+                            <input type="password" id="password" class="form__register-input" placeholder=" ">
+                            <label for="password" class="form__register-label">Confirmar contraseña:</label>
+
+                        </div>
+
+
+
+
+                        <div class="form__register-button">
+                            <input type="submit" class="form__button-register" value="Entrar">
+                            <input type="reset" class="form__button-register" value="Eliminar">
+                        </div>
+
+
+                    </div>
+
+
+                </form>
+
+            </main>
+
+            <!-- footer -->
+            <%- include('./partials/footer') %>
+
+
+    </body>
+
+    </html>

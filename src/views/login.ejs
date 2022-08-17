@@ -1,0 +1,37 @@
+<%- include('./partials/head',{
+    title: 'Login'
+   }) %>
+
+    <body>
+
+        <%- include('./partials/header') %>
+
+            <main class="register__main">
+
+                <form action="/" class="form">
+                    <h2 class="form__title">Inicia Sesión</h2>
+                    <p class="form__paragraph">¿Aún no tienes cuenta? <a href="/users/register" class="form__link">Ingresa aquí</a></p>
+                    <div class="form__container">
+                        <div class="form__group">
+                            <input type="text" id="user" class="form__input" placeholder=" " autocomplete="off" required>
+                            <label for="user" class="form__label">Usuario:</label>
+                            <span class="form__line"></span>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" id="password" class="form__input" placeholder=" " autocomplete="off" required>
+                            <label for="password" class="form__label">Contraseña:</label>
+                            <span class="form__line"></span>
+                        </div>
+
+                        <input type="submit" class="form__submit" value="Entrar">
+                    </div>
+                </form>
+
+            </main>
+
+            <!-- footer -->
+            <%- include('./partials/footer') %>
+
+    </body>
+
+    </html>

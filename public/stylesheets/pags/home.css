@@ -1,105 +1,5 @@
 @media (min-width: 320px) and (max-width:767px) {
-    /* header */
-    .home__header__logo {
-        display: flex;
-        padding: 15px;
-    }
-    .home__header__img {
-        width: 50%;
-        position: relative;
-        margin-right: 5px;
-    }
-    .home__header__search-bar {
-        width: 50%;
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-    .home__header__search-bar :nth-child(1) {
-        width: 80%;
-        margin-right: 3px;
-    }
-    .home__header__search-bar :nth-child(2) {
-        width: 12%;
-        background-color: #fff;
-        border: 1px solid black;
-    }
-    .home__header__text {
-        display: flex;
-        margin-top: 10px;
-        flex-direction: row-reverse;
-        justify-content: center;
-    }
-    .home__header__browser-menu__items {
-        display: flex;
-    }
-    .home__header__browser-menu__items li {
-        margin-right: 5px;
-    }
-    .home__header__browser-menu__link {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: none;
-    }
-    .nav_label {
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-        width: 100;
-    }
-    .nav_label i {
-        background-color: blue;
-        border-radius: 10%;
-        font-size: 27px;
-        padding: 5px;
-        color: white;
-    }
-    .home__header__browser-menu__items {
-        position: absolute;
-        top: 80px;
-        bottom: 0;
-        background-color: var(--colorYellow);
-        width: 100%;
-        height: 110px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
-        margin-top: 62px;
-    }
-    .nav__input:checked+.home__header__browser-menu__items {
-        margin-top: 62px;
-        clip-path: circle(100% at center);
-    }
-    .home__header__browser-menu__items ul {
-        width: 40%;
-    }
-    .home__header__browser-menu__items li {
-        padding: 10px;
-    }
-    .home__header__browser-menu__items i {
-        float: left;
-    }
-    .home__header__browser-menu__items a {
-        padding: 8px;
-    }
-    .home__header__banner---image {
-        width: auto;
-        height: 80px;
-    }
-    .home__header__banner---image img {
-        width: 100%;
-        height: 90px;
-    }
-    .nav__input {
-        display: none;
-    }
     /* section products */
-    .home__main {
-        width: 90%;
-        margin: auto;
-    }
     .home__section__products__headline {
         padding: 20px;
     }
@@ -115,7 +15,7 @@
         flex-direction: column;
         background-color: white;
         border-top: 1px solid var(--colorLightGray);
-        width: 100%;
+        width: 90%;
         height: 380%;
     }
     .home__section__product__photo {
@@ -159,109 +59,15 @@
     .home__section__product__Descriptions {
         padding: 10px;
     }
-    /* footer */
-    .home__footer__section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 30px 60px;
-    }
-    .home__footer__section__article {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    .home__footer__section__article i {
-        color: var(--colorLightBlue);
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
-    .home__footer__section__Copyright {
-        margin: 20px;
-    }
 }
 
 
 /* TABLET */
 
 @media (min-width:768px) and (max-width:1023px) {
-    /* HEADER */
-    .home__header__logo {
-        display: inline-block;
-        width: 68%;
-        padding: 30px 0 10px 10px;
-    }
-    .home__header__img {
-        width: 41%;
-        display: inline-block;
-    }
-    .home__header__search-bar {
-        width: 54%;
-        padding-top: 10px;
-        position: relative;
-        float: right;
-        display: flex;
-        justify-content: center;
-    }
-    .home__header__search-bar :nth-child(1) {
-        width: 100%;
-        position: relative;
-        border: none;
-        border-radius: 8%;
-        padding: 10px;
-    }
-    .home__header__search-bar :nth-child(2) {
-        top: 18px;
-        width: 6%;
-        background-color: #fff;
-        position: absolute;
-        right: 7px;
-        border-radius: 22%;
-    }
-    .home__header__text {
-        display: flex;
-        flex-direction: row-reverse;
-        padding-top: 50px;
-        padding-right: 20px;
-        float: right;
-    }
-    .home__header__browser-menu {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px;
-    }
-    .home__header__browser-menu__link {
-        width: 50%;
-        display: flex;
-        gap: 20px;
-    }
-    .home__header__browser-menu__items ul {
-        display: flex;
-    }
-    .home__header__browser-menu__items li {
-        margin-left: 20px;
-    }
-    .nav__input {
-        display: none;
-    }
-    .nav_label {
-        display: none;
-    }
-    .home__header__banner---image {
-        width: auto;
-        height: 162px;
-    }
-    .home__header__banner---image img {
-        width: 100%;
-        height: 100%;
-    }
     /* SECTION PRODUCTS */
     .home__main {
         background-color: var(--colorLightGray);
-        width: 90%;
-        margin: auto;
     }
     .home__section__products {
         display: flex;
@@ -357,114 +163,22 @@
         font-size: var(--SizeDescriptions);
         font-weight: 400;
     }
-    /* footer */
-    .home__footer__section {
-        display: flex;
-        padding: 10px;
-        gap: 20px;
-    }
-    .home__footer__section__article {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    .home__footer__section__article i {
-        color: var(--colorLightBlue);
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
-    .home__footer__section__Copyright {
-        margin: 20px;
-    }
 }
 
 
 /* DESKTOP */
 
 @media (min-width:1024px) {
-    /* HEADER */
-    .home__header__logo {
-        display: inline-block;
-        width: 68%;
-        padding: 30px 0 10px 10px;
-    }
-    .home__header__img {
-        width: 41%;
-        display: inline-block;
-    }
-    .home__header__search-bar {
-        width: 54%;
-        padding-top: 10px;
-        position: relative;
-        float: right;
-        display: flex;
-        justify-content: center;
-    }
-    .home__header__search-bar :nth-child(1) {
-        width: 100%;
-        position: relative;
-        border: none;
-        border-radius: 8%;
-        padding: 10px;
-    }
-    .home__header__search-bar :nth-child(2) {
-        top: 18px;
-        width: 6%;
-        background-color: #fff;
-        position: absolute;
-        right: 7px;
-        border-radius: 22%;
-    }
-    .home__header__text {
-        display: flex;
-        flex-direction: row-reverse;
-        padding-top: 50px;
-        padding-right: 20px;
-        float: right;
-    }
-    .home__header__browser-menu {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px;
-    }
-    .home__header__browser-menu__link {
-        width: 50%;
-        display: flex;
-        gap: 20px;
-    }
-    .home__header__browser-menu__items ul {
-        display: flex;
-    }
-    .home__header__browser-menu__items li {
-        margin-left: 20px;
-    }
-    .nav__input {
-        display: none;
-    }
-    .nav_label {
-        display: none;
-    }
-    .home__header__banner---image {
-        width: auto;
-        height: 162px;
-    }
-    .home__header__banner---image img {
-        width: 100%;
-        height: 100%;
-    }
     /* SECTION PRODUCTS */
     .home__main {
         background-color: var(--colorLightGray);
-        width: 90%;
-        margin: auto;
     }
     .home__section__products {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%;
+        margin: auto;
+        width: 90%;
         height: 350px;
     }
     .home__section__product {
@@ -529,6 +243,7 @@
     /* DESCRIPTION */
     .home__section__products__headline {
         padding: 20px;
+        margin-left: 50px;
     }
     .home__section__product__price {
         font-size: var(--SizePrice);
@@ -553,99 +268,9 @@
         position: relative;
         width: 187px;
     }
-    /* footer */
-    .home__footer__section {
-        display: flex;
-        padding: 18px;
-        gap: 15px;
-    }
-    .home__footer__section__article {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    .home__footer__section__article i {
-        color: var(--colorLightBlue);
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
-    .home__footer__section__Copyright {
-        margin: 20px;
-    }
 }
 
 @media (min-width:1440px) {
-    /* HEADER */
-    .home__header__logo {
-        display: inline-block;
-        width: 68%;
-        padding: 30px 0 10px 10px;
-    }
-    .home__header__img {
-        width: 41%;
-        display: inline-block;
-    }
-    .home__header__search-bar {
-        width: 54%;
-        padding-top: 10px;
-        position: relative;
-        float: right;
-        display: flex;
-        justify-content: center;
-    }
-    .home__header__search-bar :nth-child(1) {
-        width: 100%;
-        position: relative;
-        border: none;
-        border-radius: 8%;
-        padding: 10px;
-    }
-    .home__header__search-bar :nth-child(2) {
-        top: 18px;
-        width: 6%;
-        background-color: #fff;
-        position: absolute;
-        right: 7px;
-        border-radius: 22%;
-    }
-    .home__header__text {
-        display: flex;
-        flex-direction: row-reverse;
-        padding-top: 50px;
-        padding-right: 20px;
-        float: right;
-    }
-    .home__header__browser-menu {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px;
-    }
-    .home__header__browser-menu__link {
-        width: 50%;
-        display: flex;
-        gap: 20px;
-    }
-    .home__header__browser-menu__items ul {
-        display: flex;
-    }
-    .home__header__browser-menu__items li {
-        margin-left: 20px;
-    }
-    .nav__input {
-        display: none;
-    }
-    .nav_label {
-        display: none;
-    }
-    .home__header__banner---image {
-        width: auto;
-        height: 162px;
-    }
-    .home__header__banner---image img {
-        object-fit: cover;
-    }
     /* SECTION PRODUCTS */
     .home__main {
         background-color: var(--colorLightGray);
