@@ -1,8 +1,5 @@
 @media (min-width:320px) and (max-width:767px) {
     /* header */
-    .home__header {
-        height: 148px;
-    }
     .home__header__logo {
         display: flex;
         padding: 15px;
@@ -32,6 +29,9 @@
         margin-top: 10px;
         flex-direction: row-reverse;
         justify-content: center;
+    }
+    .home__header__browser-menu {
+        height: 45px;
     }
     .home__header__browser-menu__items {
         display: flex;
