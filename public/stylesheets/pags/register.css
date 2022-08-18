@@ -108,6 +108,7 @@
     }
     .form__register-photo label {
         background-color: var( --colorLightBlue);
+        color: #fff;
         height: 18px;
         width: 82px;
         border-radius: 10%;
@@ -119,6 +120,7 @@
         gap: 50px;
     }
     .form__button-register {
+        color: #fff;
         background-color: var( --colorLightBlue);
         border: none;
         padding: 5px;
@@ -249,6 +251,7 @@
     }
     .form__register-photo label {
         background-color: var( --colorLightBlue);
+        color: #fff;
         height: 18px;
         width: 82px;
         border-radius: 10%;
@@ -261,6 +264,7 @@
     }
     .form__button-register {
         background-color: var( --colorLightBlue);
+        color: #fff;
         border: none;
         padding: 5px;
         border-radius: 10%;
@@ -408,6 +412,7 @@
     }
     .form__register-photo label {
         background-color: var( --colorLightBlue);
+        color: #fff;
         height: 27px;
         width: 139px;
         font-size: 20px;
@@ -421,6 +426,7 @@
     }
     .form__button-register {
         background-color: var( --colorLightBlue);
+        color: #fff;
         border: none;
         padding: 5px;
         border-radius: 10%;

@@ -51,6 +51,7 @@
     }
     .form__submit {
         background-color: var( --colorLightBlue);
+        color: #fff;
         border: none;
         padding: 5px;
         border-radius: 10%;
@@ -110,6 +111,7 @@
         transition: transform .5s, color .3s;
     }
     .form__submit {
+        color: #fff;
         background-color: var( --colorLightBlue);
         border: none;
         padding: 5px;
@@ -175,6 +177,7 @@
         transition: transform .5s, color .3s;
     }
     .form__submit {
+        color: #fff;
         background-color: var( --colorLightBlue);
         border: none;
         padding: 5px;
