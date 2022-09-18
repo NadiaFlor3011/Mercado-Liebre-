@@ -1,436 +1,441 @@
-@media (min-width:320px) and (max-width:767px) {
-    .form__register {
-        background-color: #fff;
-        margin: auto;
-        width: 90%;
-        margin-top: 30px;
-        padding: 5px;
-        border-radius: 10px;
-        box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
-        text-align: center;
-    }
-    .form__register-paragraph {
-        font-weight: 300;
-    }
-    .form__register-container {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 55px;
-    }
-    .form__register-group {
-        position: relative;
-        color: #000;
-    }
-    .form__register-input {
-        font-size: 20px;
-        padding: 3px -3px;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid #5757577e;
-    }
-    .form__register-label {
-        color: #000000;
-        cursor: pointer;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        transform: translateY(5px);
-        transition: transform .5s, color .3s;
-    }
-    .form__register-input:focus+.form__register-label,
-    .form__register-input:not(:placeholder-shown)+.form__register-label {
-        transform: translateY(-10px) scale(.7);
-        transform-origin: left top;
-        color: #5757577e;
-    }
-    /* DATE */
-    .form__register-date {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .form__register-date h3 {
-        padding: 5px;
-        width: 55%;
-    }
-    .register-date {
-        border: none;
-        padding-left: 6px;
-        width: 100%;
-    }
-    /* USER */
-    .form__register-user {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .form__register-user h3 {
-        width: 100%;
-        padding-bottom: 5px;
-    }
-    .user-label {
-        margin: 10px;
-    }
-    .user-input {
-        margin-left: 40px;
-    }
-    /* INTERESTS */
-    .form__interests {
-        display: flex;
-        /* flex-wrap: wrap; */
-        flex-direction: column;
-        align-items: start;
-        gap: 16px;
-        width: 100%;
-    }
-    .form__interests h3 {
-        width: 100%;
-    }
-    .form__register-photo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 90%;
-        height: 100px;
-        gap: 15px;
-        background-color: var( --colorLightGray);
-    }
-    .form__register-photo h3 {
-        width: 100%;
-        padding-top: 10px;
-    }
-    .form__register-photo input {
-        display: none;
-    }
-    .form__register-photo i {
-        font-size: 40px;
-        color: rgba(92, 88, 88, 0.864);
-    }
-    .form__register-photo label {
-        background-color: var( --colorLightBlue);
-        color: #fff;
-        height: 20%;
-        width: 82px;
-        border-radius: 10%;
-        margin-top: 13px;
-    }
-    /* BUTTON */
-    .form__register-button {
-        display: flex;
-        gap: 50px;
-    }
-    .form__button-register {
-        color: #fff;
-        background-color: var( --colorLightBlue);
-        border: none;
-        padding: 5px;
-        border-radius: 10%;
-        width: 60px;
-    }
+@media (min-width: 320px) and (max-width: 767px) {
+  .form__register {
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    margin-top: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
+    text-align: center;
+  }
+  .form__register-paragraph {
+    font-weight: 300;
+  }
+  .form__register-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+  }
+  .form__register-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #000;
+  }
+  .form__register-input {
+    font-size: 20px;
+    padding: 3px -3px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e;
+  }
+  .form__register-label {
+    color: #000000;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translateY(5px);
+    transition: transform 0.5s, color 0.3s;
+  }
+  .form__register-input:focus + .form__register-label,
+  .form__register-input:not(:placeholder-shown) + .form__register-label {
+    transform: translateY(-10px) scale(0.7);
+    transform-origin: left top;
+    color: #5757577e;
+  }
+  /* DATE */
+  .form__register-date {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form__register-date h3 {
+    padding: 5px;
+    width: 55%;
+  }
+  .register-date {
+    border: none;
+    padding-left: 6px;
+    width: 100%;
+  }
+  /* USER */
+  .form__register-user {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form__register-user h3 {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .user-label {
+    margin: 10px;
+  }
+  .user-input {
+    margin-left: 40px;
+  }
+  /* INTERESTS */
+  .form__interests {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    width: 100%;
+  }
+  .form__interests h3 {
+    width: 100%;
+  }
+  .form__register-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    height: 100px;
+    gap: 15px;
+    background-color: var(--colorLightGray);
+  }
+  .form__register-photo h3 {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .form__register-photo input {
+    display: none;
+  }
+  .form__register-photo i {
+    font-size: 40px;
+    color: rgba(92, 88, 88, 0.864);
+  }
+  .form__register-photo label {
+    background-color: var(--colorLightBlue);
+    color: #fff;
+    height: 20%;
+    width: 82px;
+    border-radius: 10%;
+    margin-top: 13px;
+  }
+  /* BUTTON */
+  .form__register-button {
+    display: flex;
+    gap: 50px;
+  }
+  .form__button-register {
+    color: #fff;
+    background-color: var(--colorLightBlue);
+    border: none;
+    padding: 5px;
+    border-radius: 10%;
+    width: 60px;
+  }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
-    .form__register {
-        background-color: #fff;
-        margin: auto;
-        width: 70%;
-        margin-top: 30px;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
-        text-align: center;
-    }
-    .form__register-paragraph {
-        font-weight: 300;
-    }
-    .form__register-container {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 55px;
-    }
-    .form__register-group {
-        position: relative;
-        color: #000;
-    }
-    .form__register-input {
-        width: 380px;
-        font-size: 20px;
-        padding: 3px -3px;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid #5757577e;
-    }
-    .form__register-label {
-        color: #000000;
-        cursor: pointer;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        transform: translateY(5px);
-        transition: transform .5s, color .3s;
-    }
-    .form__register-input:focus+.form__register-label,
-    .form__register-input:not(:placeholder-shown)+.form__register-label {
-        transform: translateY(-10px) scale(.7);
-        transform-origin: left top;
-        color: #5757577e;
-    }
-    /* DATE */
-    .form__register-date {
-        display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-    }
-    .form__register-date h3 {
-        padding: 5px;
-        width: 35%;
-    }
-    .register-date {
-        border: none;
-        padding-left: 6px;
-        width: 100%;
-    }
-    /* USER */
-    .form__register-user {
-        display: flex;
-        flex-wrap: wrap;
-        width: 53%;
-    }
-    .form__register-user h3 {
-        width: 100%;
-        padding-bottom: 5px;
-    }
-    .user-label {
-        margin: 10px;
-    }
-    .user-input {
-        margin-left: 40px;
-    }
-    /* INTERESTS */
-    .form__interests {
-        display: flex;
-        /* flex-wrap: wrap; */
-        flex-direction: column;
-        align-items: start;
-        gap: 16px;
-        width: 100%;
-    }
-    .form__interests h3 {
-        width: 100%;
-    }
-    .form__interests-group {
-        display: flex;
-        width: 50%;
-        gap: 10px;
-        align-items: center;
-    }
-    .form__interests-group :nth-child(1) {
-        margin-left: 100px;
-    }
-    .form__register-photo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 80%;
-        height: 160px;
-        gap: 15px;
-        background-color: var( --colorLightGray);
-    }
-    .form__register-photo h3 {
-        width: 100%;
-        padding-top: 10px;
-    }
-    .form__register-photo input {
-        display: none;
-    }
-    .form__register-photo i {
-        font-size: 40px;
-        color: rgba(92, 88, 88, 0.864);
-    }
-    .form__register-photo label {
-        background-color: var( --colorLightBlue);
-        color: #fff;
-        height: 12%;
-        width: 82px;
-        border-radius: 10%;
-        margin-top: 13px;
-    }
-    /* BUTTON */
-    .form__register-button {
-        display: flex;
-        gap: 50px;
-    }
-    .form__button-register {
-        background-color: var( --colorLightBlue);
-        color: #fff;
-        border: none;
-        padding: 5px;
-        border-radius: 10%;
-        width: 90px;
-    }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .form__register {
+    background-color: #fff;
+    margin: auto;
+    width: 70%;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
+    text-align: center;
+  }
+  .form__register-paragraph {
+    font-weight: 300;
+  }
+  .form__register-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+  }
+  .form__register-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #000;
+  }
+  .form__register-input {
+    width: 380px;
+    font-size: 20px;
+    padding: 3px -3px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e;
+  }
+  .form__register-label {
+    color: #000000;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translateY(5px);
+    transition: transform 0.5s, color 0.3s;
+  }
+  .form__register-input:focus + .form__register-label,
+  .form__register-input:not(:placeholder-shown) + .form__register-label {
+    transform: translateY(-10px) scale(0.7);
+    transform-origin: left top;
+    color: #5757577e;
+  }
+  /* DATE */
+  .form__register-date {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .form__register-date h3 {
+    padding: 5px;
+    width: 35%;
+  }
+  .register-date {
+    border: none;
+    padding-left: 6px;
+    width: 100%;
+  }
+  /* USER */
+  .form__register-user {
+    display: flex;
+    flex-wrap: wrap;
+    width: 53%;
+  }
+  .form__register-user h3 {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .user-label {
+    margin: 10px;
+  }
+  .user-input {
+    margin-left: 40px;
+  }
+  /* INTERESTS */
+  .form__interests {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    width: 100%;
+  }
+  .form__interests h3 {
+    width: 100%;
+  }
+  .form__interests-group {
+    display: flex;
+    width: 50%;
+    gap: 10px;
+    align-items: center;
+  }
+  .form__interests-group :nth-child(1) {
+    margin-left: 100px;
+  }
+  .form__register-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    height: 160px;
+    gap: 15px;
+    background-color: var(--colorLightGray);
+  }
+  .form__register-photo h3 {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .form__register-photo input {
+    display: none;
+  }
+  .form__register-photo i {
+    font-size: 40px;
+    color: rgba(92, 88, 88, 0.864);
+  }
+  .form__register-photo label {
+    background-color: var(--colorLightBlue);
+    color: #fff;
+    height: 12%;
+    width: 82px;
+    border-radius: 10%;
+    margin-top: 13px;
+  }
+  /* BUTTON */
+  .form__register-button {
+    display: flex;
+    gap: 50px;
+  }
+  .form__button-register {
+    background-color: var(--colorLightBlue);
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 10%;
+    width: 90px;
+  }
 }
-
 
 /* DESKTOP */
 
-@media (min-width:1024px) {
-    .form__register {
-        background-color: #fff;
-        margin: auto;
-        width: 70%;
-        margin-top: 30px;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
-        text-align: center;
-    }
-    .form__register-title {
-        font-size: 40px;
-    }
-    .form__register-paragraph {
-        font-weight: 300;
-        font-size: 25px;
-    }
-    .form__register-container {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 55px;
-    }
-    .form__register-group {
-        position: relative;
-        color: #000;
-    }
-    .form__register-input {
-        width: 485px;
-        font-size: 27px;
-        padding: 3px -3px;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid #5757577e;
-    }
-    .form__register-label {
-        color: #000000;
-        font-size: 20px;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        transform: translateY(5px);
-        transition: transform .5s, color .3s;
-    }
-    .form__register-input:focus+.form__register-label,
-    .form__register-input:not(:placeholder-shown)+.form__register-label {
-        transform: translateY(-10px) scale(.7);
-        transform-origin: left top;
-        color: #5757577e;
-    }
-    /* DATE */
-    .form__register-date {
-        display: flex;
-        flex-wrap: wrap;
-        width: 75%;
-    }
-    .form__register-date h3 {
-        padding: 5px;
-        width: 38%;
-        font-size: 20px;
-    }
-    .register-date {
-        border: none;
-        padding-left: 6px;
-        width: 100%;
-        font-size: 20px;
-    }
-    /* USER */
-    .form__register-user {
-        display: flex;
-        flex-wrap: wrap;
-        width: 60%;
-    }
-    .form__register-user h3 {
-        width: 100%;
-        padding-bottom: 5px;
-        font-size: 20px;
-    }
-    .user-label {
-        margin: 10px;
-        margin-right: 42px;
-        font-size: 20px;
-    }
-    .user-input {
-        margin-left: 40px;
-        width: 6%;
-    }
-    /* INTERESTS */
-    .form__interests {
-        display: flex;
-        /* flex-wrap: wrap; */
-        flex-direction: column;
-        align-items: start;
-        gap: 16px;
-        width: 100%;
-    }
-    .form__interests h3 {
-        width: 100%;
-        font-size: 20px;
-    }
-    .form__interests-group {
-        display: flex;
-        width: 50%;
-        gap: 10px;
-        align-items: center;
-    }
-    .form__interests-group :nth-child(1) {
-        margin-left: 96px;
-        width: 6%;
-    }
-    .form__interests-group :nth-child(2) {
-        font-size: 20px;
-    }
-    .form__register-photo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 80%;
-        height: 160px;
-        background-color: var( --colorLightGray);
-    }
-    .form__register-photo h3 {
-        width: 100%;
-        padding-top: 10px;
-        font-size: 20px;
-    }
-    .form__register-photo input {
-        display: none;
-    }
-    .form__register-photo i {
-        font-size: 60px;
-        color: rgba(92, 88, 88, 0.864);
-    }
-    .form__register-photo label {
-        background-color: var( --colorLightBlue);
-        color: #fff;
-        height: 20%;
-        width: 139px;
-        font-size: 20px;
-        border-radius: 10%;
-        margin-top: 16px;
-    }
-    /* BUTTON */
-    .form__register-button {
-        display: flex;
-        gap: 85px;
-    }
-    .form__button-register {
-        background-color: var( --colorLightBlue);
-        color: #fff;
-        border: none;
-        padding: 5px;
-        border-radius: 10%;
-        width: 125px;
-        font-size: 20px;
-    }
+@media (min-width: 1024px) {
+  .form__register {
+    background-color: #fff;
+    margin: auto;
+    width: 70%;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
+    text-align: center;
+  }
+  .form__register-title {
+    font-size: 40px;
+  }
+  .form__register-paragraph {
+    font-weight: 300;
+    font-size: 25px;
+  }
+  .form__register-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+  }
+  .form__register-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #000;
+  }
+  .form__register-input {
+    width: 485px;
+    font-size: 27px;
+    padding: 3px -3px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e;
+  }
+  .form__register-label {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translateY(5px);
+    transition: transform 0.5s, color 0.3s;
+  }
+  .form__register-input:focus + .form__register-label,
+  .form__register-input:not(:placeholder-shown) + .form__register-label {
+    transform: translateY(-10px) scale(0.7);
+    transform-origin: left top;
+    color: #5757577e;
+  }
+  /* DATE */
+  .form__register-date {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  .form__register-date h3 {
+    padding: 5px;
+    width: 38%;
+    font-size: 20px;
+  }
+  .register-date {
+    border: none;
+    padding-left: 6px;
+    width: 100%;
+    font-size: 20px;
+  }
+  /* USER */
+  .form__register-user {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .form__register-user h3 {
+    width: 100%;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+  .user-label {
+    margin: 10px;
+    margin-right: 42px;
+    font-size: 20px;
+  }
+  .user-input {
+    margin-left: 40px;
+    width: 6%;
+  }
+  /* INTERESTS */
+  .form__interests {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+    width: 100%;
+  }
+  .form__interests h3 {
+    width: 100%;
+    font-size: 20px;
+  }
+  .form__interests-group {
+    display: flex;
+    width: 50%;
+    gap: 10px;
+    align-items: center;
+  }
+  .form__interests-group :nth-child(1) {
+    margin-left: 96px;
+    width: 6%;
+  }
+  .form__interests-group :nth-child(2) {
+    font-size: 20px;
+  }
+  .form__register-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    height: 160px;
+    background-color: var(--colorLightGray);
+  }
+  .form__register-photo h3 {
+    width: 100%;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .form__register-photo input {
+    display: none;
+  }
+  .form__register-photo i {
+    font-size: 60px;
+    color: rgba(92, 88, 88, 0.864);
+  }
+  .form__register-photo label {
+    background-color: var(--colorLightBlue);
+    color: #fff;
+    height: 20%;
+    width: 139px;
+    font-size: 20px;
+    border-radius: 10%;
+    margin-top: 16px;
+  }
+  /* BUTTON */
+  .form__register-button {
+    display: flex;
+    gap: 85px;
+  }
+  .form__button-register {
+    background-color: var(--colorLightBlue);
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 10%;
+    width: 125px;
+    font-size: 20px;
+  }
 }

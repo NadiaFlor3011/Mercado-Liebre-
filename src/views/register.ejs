@@ -8,93 +8,41 @@
 
             <main class="register__main">
 
-                <form action="/" class="form__register">
+                <form action="/users/update/1"  class="form__register" method="POST">
                     <h2 class="form__register-title">Registrate</h2>
 
                     <p class="form__register-paragraph">¿Ya tenés cuenta? <a href="/users/login" class="form__link">Ingresa aquí</a></p>
                     <div class="form__register-container">
 
                         <div class="form__register-group">
-                            <input type="text" id="name" class="form__register-input" placeholder=" " autocomplete="off" required minlength="3">
-                            <label for="name" class="form__register-label">Nombre y apellido:</label>
+                            <input type="text" id="name" class="form__register-input" name="name"  placeholder=" " >
+                            <label for="name" class="form__register-label">Nombre:</label>
+                            <small><%= locals.errors && errors.name ? errors.name.msg : null %></small>
 
                         </div>
                         <div class="form__register-group">
-                            <input type="text" id="user" class="form__register-input" placeholder=" " autocomplete="off">
-                            <label for="user" class="form__register-label">Usuario:</label>
-
+                            <input type="text" id="surname" name="surname" class="form__register-input" placeholder=" " value="<%= locals.old && old.name ? old.name : null %>" >
+                            <label for="surname" class="form__register-label">Apellido:</label>
+                            <small><%= locals.errors && errors.surname ? errors.surname.msg : null %></small> 
                         </div>
-                        <div class="form__register-date">
-                            <h3>Fecha de nacimiento:</h3>
-                            <input type="date" id="date" class="register-date">
-
+                       
+                    
+                        <div class="form__register-group">
+                            <input type="email" id="email" name="email" class="form__register-input"  placeholder=" " value="<%= locals.old && old.email ? old.email : null %>">
+                            <label for="email" class="form__register-label">Email:</label>
+                            <small><%= locals.errors && errors.email ? errors.email.msg : null %></small> 
                         </div>
                         <div class="form__register-group">
-                            <input type="text" id="address" class="form__register-input" placeholder=" " autocomplete="off" required minlength="3">
-
-                            <label for="address" class="form__register-label">Dirección:</label>
-
-                        </div>
-                        <div class="form__register-user">
-                            <h3>Perfil del usuario</h3>
-
-                            <input type="radio" name="user_type" class="user-input" value="Comprador">
-                            <label for="user_type" class="user-label">Comprador</label>
-                            <input type="radio" name="user_type" class="user-input" value="Vendedor">
-                            <label for="user_type" class="user-label">Vendedor</label>
-                        </div>
-                        <div class="form__interests">
-                            <h3>Intereses</h3>
-
-                            <div class="form__interests-group">
-                                <input type="checkbox" id="interests">
-                                <label for="interest">Electro</label>
-                            </div>
-                            <div class="form__interests-group">
-                                <input type="checkbox" id="interests">
-                                <label for="interest">Moda</label>
-                            </div>
-                            <div class="form__interests-group">
-                                <input type="checkbox" id="interests">
-                                <label for="interest">Hogar</label>
-                            </div>
-                            <div class="form__interests-group">
-                                <input type="checkbox" id="interests">
-                                <label for="interest">Juguetería</label>
-                            </div>
-                            <div class="form__interests-group">
-                                <input type="checkbox" id="interests">
-                                <label for="interest">Vida sana</label>
-
-                            </div>
-
-
-
-                        </div>
-                        <div class="form__register-photo">
-                            <h3>Foto de perfil:</h3>
-                            <input type="file" name="avatar" id="avatar" accept="jpg">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <label for="avatar">Cargar archivo</label>
-
-
-                        </div>
-                        <div class="form__register-group">
-                            <input type="password" id="password" class="form__register-input" placeholder=" ">
+                            <input type="password" id="password" name="password" class="form__register-input" placeholder=" " value="<%= locals.old && old.password ? old.password : null %>">
                             <label for="password" class="form__register-label">Contraseña:</label>
-
+                            <small><%= locals.errors && errors.password ? errors.password.msg : null %></small> 
                         </div>
-                        <div class="form__register-group">
-                            <input type="password" id="password" class="form__register-input" placeholder=" ">
-                            <label for="password" class="form__register-label">Confirmar contraseña:</label>
-
-                        </div>
-
+                    
 
 
 
                         <div class="form__register-button">
-                            <input type="submit" class="form__button-register" value="Entrar">
+                            <button type="submit" class="form__button-register" value="Entrar">Entrar</button>
                             <input type="reset" class="form__button-register" value="Eliminar">
                         </div>
 
