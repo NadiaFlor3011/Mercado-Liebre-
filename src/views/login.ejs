@@ -8,19 +8,21 @@
 
             <main class="register__main">
 
-                <form action="/" class="form">
+                <form action="" class="form" method="post">
                     <h2 class="form__title">Inicia Sesión</h2>
                     <p class="form__paragraph">¿Aún no tienes cuenta? <a href="/users/register" class="form__link">Ingresa aquí</a></p>
                     <div class="form__container">
                         <div class="form__group">
-                            <input type="text" id="user" class="form__input" placeholder=" " autocomplete="off" required>
-                            <label for="user" class="form__label">Usuario:</label>
-                            <span class="form__line"></span>
+                            <input type="email" id="email" name="email" class="form__input" placeholder=" " >
+                            <label for="email" class="form__label">Email:</label>
+                            <small><%= locals.errors && errors.email ? errors.email.msg : null %></small>
+                          
                         </div>
                         <div class="form__group">
-                            <input type="text" id="password" class="form__input" placeholder=" " autocomplete="off" required>
+                            <input type="password" id="password" name="password" class="form__input" placeholder=" " >
                             <label for="password" class="form__label">Contraseña:</label>
-                            <span class="form__line"></span>
+                            <small><%= locals.errors && errors.password ? errors.password.msg : null %></small>
+                            
                         </div>
 
                         <input type="submit" class="form__submit" value="Entrar">

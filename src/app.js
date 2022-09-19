@@ -4,9 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var override = require('method-override')
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+
+const session = require('express-session');
+const userCheck = require('./middlewares/userCheck')
+const cookieCheck = require('./middlewares/cookieCheck')
+
+
 
 var app = express();
 
@@ -20,17 +25,24 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(override('_method'));
+app.use(session({
+    secret: 'Nombre del sitio',
+    resave: false,
+    saveUninitialized: true,
+}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use(cookieCheck)
+app.use(userCheck);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
     // set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};

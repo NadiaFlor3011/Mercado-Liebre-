@@ -1,19 +1,44 @@
 [
-
-    {
-        "id": 2,
-        "firstName": "Usuario",
-        "lastName": "craftsy",
-        "email": "user@craftsy15.com",
-        "password": "$2a$10$KYmmgRvtbWvsA61NxamIruLb/i4f4.D93CS9UmAbUJJAwg2D0qHb.",
-        "rol": "user",
-        "birthday": "2022-09-21",
-        "avatar": "avatar-1662072621801.jpg",
-        "gender": "m",
-        "hobbies": "aire libre",
-        "address": "Siempre viva 1234",
-        "city": "San Miguel",
-        "province": "Buenos Aires",
-        "about": "sin comentarios"
-    }
+   {
+      "id": 1,
+      "name": "Nadia Florencia",
+      "surname": "Maldonado",
+      "email": "nadiamaldonado3011@gmail.com",
+      "password": "$2a$10$h68t8Pu3WbYN1o83Xx4co.4Yqop..g2TDNYSwsq/LCw9OOcejCMp2"
+   },
+   {
+      "id": 2,
+      "name": "Nadia Florencia",
+      "surname": "Maldonado",
+      "email": "nadiadonado3011@gmail.com",
+      "password": "$2a$10$PAVEqIl9QiepJSronm9zXO4YlMtOx72X6W07hDnIgtjom3NJEMH/q"
+   },
+   {
+      "id": 3,
+      "name": "nadua",
+      "surname": "dsadasdas",
+      "email": "nadia@gmail.com",
+      "password": "$2a$10$KHXAbCgsSShSnImKYnlDBOTNF/.qyXZn84N0kZUDSNJJOf3av5UF."
+   },
+   {
+      "id": 4,
+      "name": "raul",
+      "surname": "raul",
+      "email": "raul@gmail.com",
+      "password": "$2a$10$LBXzIfMw/MRgu8inGNswceblr4VsG5aUr4YyNuEnNH9iBJ11G9hbm"
+   },
+   {
+      "id": 5,
+      "name": "Nadia Florencia",
+      "surname": "Maldonado",
+      "email": "nadiaflorencia3011@gmail.com",
+      "password": "$2a$10$NDG.h/gflkzS8taRAZacbOn.xVOSaR1tSszVeEqKJXI8DAYmLNfOW"
+   },
+   {
+      "id": 6,
+      "name": "Nadia Florencia",
+      "surname": "Maldonado",
+      "email": "nadiaflorencia3011@gmail.com",
+      "password": "$2a$10$E1cVDqjW1mnrZ7o04MzcZOCVsvyiqf78OrkcXPx.rTmyYBr9usjgW"
+   }
 ]
