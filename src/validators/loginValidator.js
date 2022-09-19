@@ -4,8 +4,8 @@ const bcryptjs = require('bcryptjs')
 
 module.exports = [
     check('email')
-        .notEmpty().withMessage('Este campo en obligatorio').bail(),
-
+        .notEmpty().withMessage('Este campo en obligatorio').bail()
+        .isEmail().withMessage('Se requiere un email válido'),
 
     body('password')
 

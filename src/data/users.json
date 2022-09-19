@@ -40,5 +40,12 @@
       "surname": "Maldonado",
       "email": "nadiaflorencia3011@gmail.com",
       "password": "$2a$10$E1cVDqjW1mnrZ7o04MzcZOCVsvyiqf78OrkcXPx.rTmyYBr9usjgW"
+   },
+   {
+      "id": 7,
+      "name": "fiama",
+      "surname": "fiama",
+      "email": "fiama@gmail.com",
+      "password": "$2a$10$Lz0qPskX4J5o.pYvGntAzuyrchwwxtXnOR1sysSNjkjHt7JktBJRG"
    }
 ]

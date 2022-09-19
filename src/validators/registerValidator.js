@@ -20,7 +20,7 @@ module.exports = [
 
     body('email')
         .notEmpty().withMessage('El email es obligatorio').bail()
-        .isEmail().withMessage('Se requieren un email válido'),
+        .isEmail().withMessage('Se requiere un email válido'),
 
 
     check('password')

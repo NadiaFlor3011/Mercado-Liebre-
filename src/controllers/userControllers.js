@@ -7,23 +7,28 @@ module.exports = {
     login: (req, res) => {
         res.render('login')
     },
-    userLogin: (req, res) => {
+    checkLoguin: (req, res) => {
+
         let errors = validationResult(req);
 
         if (errors.isEmpty()) {
-            let { name, password } = loadUsers().find(
-                (user) => user.user === req.body.user
+
+            let { id, name, surname } = loadUsers().find(
+                (user) => user.email === req.body.email
             );
 
             req.session.userLogin = {
+                id,
                 name,
-                password,
+                surname
             };
-            // if (req.body.remenber) {
-            //     res.cookie('userLeySeca', req.session.userLogin, {
-            //         maxAge: 1000 * 60
-            //     })
-            // }
+            res.redirect('/')
+
+            if (req.body.remember) {
+                res.cookie('MercadoLiebre', req.session.userLogin, {
+                    maxAge: 1000 * 60
+                })
+            }
             res.redirect("/");
         } else {
             res.render("login", {
@@ -67,6 +72,9 @@ module.exports = {
             old: req.body,
         });
     },
-
+    logout: (req, res) => {
+        req.session.destroy()
+        return res.redirect('/')
+    }
 
 }

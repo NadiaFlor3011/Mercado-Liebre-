@@ -26,15 +26,16 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(override('_method'));
 app.use(session({
-    secret: 'Nombre del sitio',
+    secret: 'MercadoLiebre',
     resave: false,
     saveUninitialized: true,
 }));
-
+app.use(userCheck);
+app.use(cookieCheck)
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use(cookieCheck)
-app.use(userCheck);
+
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
